@@ -11,8 +11,6 @@ if (num1 > num2) {
   console.log(`Il Numero maggiore è ${num2}`);
 }
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
@@ -43,13 +41,11 @@ if (num5 === 25) {
 const num6 = 4;
 const num7 = 12;
 
-if (num6 === 8) {
-  console.log("num6 è uguale a 8");
+if (num6 === 8 || num7 === 8) {
+  console.log("un numero è 8");
 } else if (num7 - num6 === 8) {
-  console.log();
+  console.log("la loro sottrazione è 8");
 }
-
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -83,7 +79,8 @@ if (totalShoppingCart > 50) {
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const fornito = 5;
+console.log(typeof fornito);
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
@@ -91,8 +88,6 @@ if (totalShoppingCart > 50) {
 
 const n1 = 80;
 console.log(n1 % 2);
-
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -118,30 +113,41 @@ if (val < 5) {
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
+{
+  const me = {
+    name: "John",
+    lastName: "Doe",
+    skills: ["javascript", "html", "css"],
+  };
 
-const me = {
-  name: "John",
-  lastName: "Doe",
-  skills: ["javascript", "html", "css"],
-};
-
-me.city = "Toronto";
-console.log(me);
-
+  me.city = "Toronto";
+  console.log(me);
+}
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
-
+{
+  const me = {
+    name: "John",
+    lastName: "Doe",
+    skills: ["javascript", "html", "css"],
+  };
+  delete me.lastName;
+  console.log(me);
+}
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
-
-console.log(me.skills);
-me.skills.pop();
-console.log(me.skills);
-
+{
+  const me = {
+    name: "John",
+    lastName: "Doe",
+    skills: ["javascript", "html", "css"],
+  };
+  console.log(me.skills);
+  me.skills.pop();
+  console.log(me.skills);
+}
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
