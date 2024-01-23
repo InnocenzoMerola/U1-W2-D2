@@ -38,7 +38,7 @@ if (num5 === 25) {
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-const num6 = 4;
+const num6 = 8;
 const num7 = 12;
 
 if (num6 === 8 || num7 === 8) {
@@ -52,20 +52,18 @@ if (num6 === 8 || num7 === 8) {
   C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
-
-const totalShoppingCart = 100;
-if (totalShoppingCart > 50) {
-  console.log("spedizione gratuita");
-} else if (totalShoppingCart < 50) {
-  console.log("spedizione = 10 euro");
+{
+  const totalShoppingCart = 120;
+  if (totalShoppingCart > 50) {
+    console.log("spedizione gratuita");
+  } else if (totalShoppingCart < 50) {
+    console.log("spedizione = 10 euro");
+  }
 }
-
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -80,7 +78,15 @@ if (totalShoppingCart > 50) {
 */
 
 const fornito = 5;
-console.log(typeof fornito);
+if (typeof fornito === "number") {
+  console.log("Numero");
+} else if (typeof fornito !== "number") {
+  console.log("Non è un numero");
+}
+
+// ------------------------------
+const fornito1 = 21;
+console.log(typeof fornito1);
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
