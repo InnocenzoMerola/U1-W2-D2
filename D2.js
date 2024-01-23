@@ -96,8 +96,13 @@ console.log(typeof fornito1);
 */
 
 const n1 = 80;
-console.log(n1 % 2);
+const div = n1 % 2;
 
+if (div === 0) {
+  console.log("IL numero è pari");
+} else if (div !== 0) {
+  console.log("Il numero è dispari");
+}
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
   let val = 7
