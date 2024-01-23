@@ -41,7 +41,7 @@ if (rest === 0) {
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-const num6 = 8;
+const num6 = 4;
 const num7 = 12;
 
 if (num6 === 8 || num7 === 8) {
