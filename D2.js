@@ -29,9 +29,12 @@ if (num4 === 5) {
 */
 
 const num5 = 25;
+const rest = 25 % 5;
 
-if (num5 === 25) {
+if (rest === 0) {
   console.log("divisibile per 5");
+} else if (rest !== 0) {
+  console.log("non divisibile per 5");
 }
 
 /* ESERCIZIO 4
