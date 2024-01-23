@@ -19,8 +19,7 @@ const num4 = 18;
 
 if (num4 === 5) {
   console.log("equal");
-} else {
-  num4 !== 5;
+} else if (num4 !== 5) {
   console.log("not equal");
 }
 
@@ -137,41 +136,30 @@ if (val < 5) {
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
-{
-  const me = {
-    name: "John",
-    lastName: "Doe",
-    skills: ["javascript", "html", "css"],
-  };
 
-  me.city = "Toronto";
-  console.log(me);
-}
+const me = {
+  name: "John",
+  lastName: "Doe",
+  skills: ["javascript", "html", "css"],
+};
+
+me.city = "Toronto";
+console.log(me);
+
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
-{
-  const me = {
-    name: "John",
-    lastName: "Doe",
-    skills: ["javascript", "html", "css"],
-  };
-  delete me.lastName;
-  console.log(me);
-}
+
+delete me.lastName;
+console.log(me);
+
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
-{
-  const me = {
-    name: "John",
-    lastName: "Doe",
-    skills: ["javascript", "html", "css"],
-  };
 
-  me.skills.pop();
-  console.log(me.skills);
-}
+me.skills.pop();
+console.log(me.skills);
+
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
