@@ -6,9 +6,9 @@ const num1 = 17;
 const num2 = 21;
 
 if (num1 > num2) {
-  console.log(`Il Numero maggiore è ${num1}`);
+  console.log("Esercizio 1: " + `Il Numero maggiore è ${num1}`);
 } else {
-  console.log(`Il Numero maggiore è ${num2}`);
+  console.log("Esercizio 1: " + `Il Numero maggiore è ${num2}`);
 }
 
 /* ESERCIZIO 2
@@ -18,10 +18,10 @@ if (num1 > num2) {
 const num4 = 18;
 
 if (num4 === 5) {
-  console.log("equal");
+  console.log("Esercizio 2: " + "equal");
 } else {
   num4 !== 5;
-  console.log("not equal");
+  console.log("Esercizio 2: " + "not equal");
 }
 
 /* ESERCIZIO 3
@@ -32,9 +32,9 @@ const num5 = 25;
 const rest = 25 % 5;
 
 if (rest === 0) {
-  console.log("divisibile per 5");
+  console.log("Esercizio 3: " + "divisibile per 5");
 } else if (rest !== 0) {
-  console.log("non divisibile per 5");
+  console.log("Esercizio 3: " + "non divisibile per 5");
 }
 
 /* ESERCIZIO 4
@@ -45,9 +45,9 @@ const num6 = 4;
 const num7 = 12;
 
 if (num6 === 8 || num7 === 8) {
-  console.log("un numero è 8");
+  console.log("Esercizio 4: " + "un numero è 8");
 } else if (num7 - num6 === 8) {
-  console.log("la loro sottrazione è 8");
+  console.log("Esercizio 4: " + "la loro sottrazione è 8");
 }
 
 /* ESERCIZIO 5
@@ -58,9 +58,9 @@ if (num6 === 8 || num7 === 8) {
 {
   const totalShoppingCart = 120;
   if (totalShoppingCart > 50) {
-    console.log("spedizione gratuita");
+    console.log("Esercizio 5: " + "spedizione gratuita");
   } else if (totalShoppingCart < 50) {
-    console.log("spedizione = 10 euro");
+    console.log("Esercizio 5: " + "spedizione = 10 euro");
   }
 }
 /* ESERCIZIO 6
@@ -68,6 +68,27 @@ if (num6 === 8 || num7 === 8) {
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
+let totalShoppingCart = 120;
+let valueBlackFriday = (totalShoppingCart / 100) * 20;
+let discount = totalShoppingCart - valueBlackFriday;
+
+if (discount > 50) {
+  console.log(
+    "Esercizio 6: " +
+      "Oggi per te 20% di sconto sui prodotti. Totale speso: " +
+      discount +
+      " euro. " +
+      "Spedizione gratuita"
+  );
+} else if (discount < 50) {
+  console.log(
+    "Esercizio 6: " +
+      "Oggi per te 20% di sconto sui prodotti. Totale speso: " +
+      discount +
+      " euro. " +
+      "Spedizione: 10 euro"
+  );
+}
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
@@ -80,16 +101,16 @@ if (num6 === 8 || num7 === 8) {
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-const fornito = 5;
-if (typeof fornito === "number") {
-  console.log("Numero");
-} else if (typeof fornito !== "number") {
-  console.log("Non è un numero");
+const forniture = 5;
+if (typeof forniture === "number") {
+  console.log("Esercizio 8: " + "Number");
+} else if (typeof forniture !== "number") {
+  console.log("Esercizio 8: " + "Not number");
 }
 
 // ------------------------------
-const fornito1 = 21;
-console.log(typeof fornito1);
+// const fornito1 = 21;
+// console.log(typeof fornito1);
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
@@ -99,9 +120,9 @@ const n1 = 80;
 const div = n1 % 2;
 
 if (div === 0) {
-  console.log("IL numero è pari");
+  console.log("Esercizio 9: " + "IL numero è pari");
 } else if (div !== 0) {
-  console.log("Il numero è dispari");
+  console.log("Esercizio 9: " + "Il numero è dispari");
 }
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -117,11 +138,11 @@ if (div === 0) {
 
 let val = 7;
 if (val < 5) {
-  console.log("Meno di 5");
+  console.log("Esercizio 10: " + "Meno di 5");
 } else if (val < 10) {
-  console.log("Meno di 10");
+  console.log("Esercizio 10: " + "Meno di 10");
 } else {
-  console.log("Uguale a 10 o maggiore");
+  console.log("Esercizio 10: " + "Uguale a 10 o maggiore");
 }
 
 /* ESERCIZIO 11
@@ -158,7 +179,7 @@ if (val < 5) {
     lastName: "Doe",
     skills: ["javascript", "html", "css"],
   };
-  console.log(me.skills);
+
   me.skills.pop();
   console.log(me.skills);
 }
